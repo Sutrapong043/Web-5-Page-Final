@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>การนอนหลับและพักผ่อน | Wellness Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #wellnessCarousel {
+            max-height: 500px;
+            overflow: hidden;
+        }
+
+        #wellnessCarousel .carousel-item img {
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Wellness Planner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Page02.html">วางแผนอาหาร</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Page03.html">ออกกำลังกาย</a></li>
+                    <li class="nav-item"><a class="nav-link" href="">การนอนหลับ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Page05.html">ติดตามผล</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">การนอนหลับและการพักผ่อน</h2>
+        <p class="text-center mb-4">พักผ่อนให้เพียงพอ เพื่อสุขภาพร่างกายและจิตใจที่ดี</p>
+        <div class="card mb-5">
+            <div class="card-header bg-success text-white">
+                บันทึกเวลานอนของคุณ
+            </div>
+            <div class="card-body">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="sleepTime" class="form-label">เวลาที่เข้านอน</label>
+                        <input type="time" class="form-control" id="sleepTime">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="wakeTime" class="form-label">เวลาที่ตื่น</label>
+                        <input type="time" class="form-control" id="wakeTime">
+                    </div>
+                    <div class="col-12 text-end">
+                        <button type="submit" class="btn btn-success">บันทึก</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <h4 class="mb-3">เคล็ดลับการนอนหลับสบาย</h4>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-success">
+                    <div class="card-body">
+                        <h5 class="card-title">1. ปิดอุปกรณ์อิเล็กทรอนิกส์</h5>
+                        <p class="card-text">ควรหลีกเลี่ยงการใช้มือถือ/คอมพิวเตอร์ก่อนนอนอย่างน้อย 30 นาที</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-success">
+                    <div class="card-body">
+                        <h5 class="card-title">2. จัดห้องให้มืดและเงียบ</h5>
+                        <p class="card-text">สภาพแวดล้อมที่เหมาะสมช่วยให้นอนหลับลึกและต่อเนื่อง</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 border-success">
+                    <div class="card-body">
+                        <h5 class="card-title">3. นอนให้เป็นเวลา</h5>
+                        <p class="card-text">การนอนและตื่นในเวลาเดียวกันทุกวันช่วยให้ร่างกายปรับตัว</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h4 class="mt-5">วิธีผ่อนคลายก่อนนอน</h4>
+        <ul class="nav nav-tabs" id="relaxTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="music-tab" data-bs-toggle="tab" data-bs-target="#music"
+                    type="button" role="tab">เพลงผ่อนคลาย</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="breathing-tab" data-bs-toggle="tab" data-bs-target="#breathing"
+                    type="button" role="tab">เทคนิคหายใจ</button>
+            </li>
+        </ul>
+        <div class="tab-content mt-3">
+            <div class="tab-pane fade show active" id="music" role="tabpanel">
+                <p>ฟังเพลงบรรเลงหรือเสียงธรรมชาติเพื่อช่วยให้จิตใจสงบ</p>
+                <div class="ratio ratio-16x9">
+                    <iframe src="https://www.youtube.com/embed/uwEaQk5VeS4?si=UQ6H33y7eAvpS7DT" title="Relaxing Music"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="breathing" role="tabpanel">
+                <p>ฝึกหายใจเข้า-ออกช้า ๆ เพื่อช่วยให้ร่างกายผ่อนคลาย</p>
+                <ul>
+                    <li>หายใจเข้า 4 วินาที</li>
+                    <li>กลั้นหายใจ 7 วินาที</li>
+                    <li>หายใจออกช้าๆ 8 วินาที</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-success text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Health & Wellness Planner By Sutrapong | พักผ่อนเพื่อสุขภาพที่ดี</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

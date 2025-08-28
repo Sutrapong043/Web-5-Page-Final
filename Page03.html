@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ออกกำลังกาย | Wellness Planner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        #wellnessCarousel {
+            max-height: 500px;
+            overflow: hidden;
+        }
+
+        #wellnessCarousel .carousel-item img {
+            object-fit: cover;
+            height: 500px;
+            width: 100%;
+        }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            flex: 1;
+        }
+
+        footer {
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">Wellness Planner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">หน้าแรก</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Page02.html">วางแผนอาหาร</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="">ออกกำลังกาย</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Page04.html">การนอนหลับ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Page05.html">ติดตามผล</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">แผนการออกกำลังกาย</h2>
+        <p class="text-center mb-4">เลือกประเภทการออกกำลังกายที่คุณต้องการทำในแต่ละวัน</p>
+
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 border-success">
+                    <img src="YOKA.jpg" class="card-img-top" alt="โยคะ">
+                    <div class="card-body">
+                        <h5 class="card-title">โยคะ</h5>
+                        <p class="card-text">เสริมความยืดหยุ่น และผ่อนคลายจิตใจ</p>
+                        <span class="badge bg-info">ระดับเบา</span>
+                        <button class="btn btn-outline-success mt-3" data-bs-toggle="modal"
+                            data-bs-target="#yogaModal">รายละเอียด</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-success">
+                    <img src="cadio.jpg" class="card-img-top" alt="คาร์ดิโอ">
+                    <div class="card-body">
+                        <h5 class="card-title">คาร์ดิโอ</h5>
+                        <p class="card-text">เพิ่มความฟิตของหัวใจ เช่น วิ่ง ปั่นจักรยาน</p>
+                        <span class="badge bg-warning text-dark">ระดับกลาง</span>
+                        <button class="btn btn-outline-success mt-3" data-bs-toggle="modal"
+                            data-bs-target="#cardioModal">รายละเอียด</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 border-success">
+                    <img src="vattraining.jpg" class="card-img-top" alt="เวทเทรนนิ่ง">
+                    <div class="card-body">
+                        <h5 class="card-title">เวทเทรนนิ่ง</h5>
+                        <p class="card-text">สร้างกล้ามเนื้อและความแข็งแรง</p>
+                        <span class="badge bg-danger">ระดับหนัก</span>
+                        <button class="btn btn-outline-success mt-3" data-bs-toggle="modal"
+                            data-bs-target="#strengthModal">รายละเอียด</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="yogaModal" tabindex="-1" aria-labelledby="yogaModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="yogaModalLabel">รายละเอียดโยคะ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>เวลา: 30 นาที</li>
+                        <li>ท่า: Downward Dog, Cobra, Warrior II</li>
+                        <li>อุปกรณ์: เสื่อโยคะ</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="cardioModal" tabindex="-1" aria-labelledby="cardioModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="cardioModalLabel">รายละเอียดคาร์ดิโอ</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>เวลา: 45 นาที</li>
+                        <li>กิจกรรม: วิ่ง, ปั่นจักรยาน, เต้นแอโรบิก</li>
+                        <li>อุปกรณ์: รองเท้าวิ่ง, เสื้อผ้ากีฬา</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="strengthModal" tabindex="-1" aria-labelledby="strengthModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title" id="strengthModalLabel">รายละเอียดเวทเทรนนิ่ง</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="ปิด"></button>
+                </div>
+                <div class="modal-body">
+                    <ul>
+                        <li>เวลา: 60 นาที</li>
+                        <li>ท่า: Squat, Deadlift, Bench Press</li>
+                        <li>อุปกรณ์: ดัมเบล, บาร์เบล, เสื่อ</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">ปิด</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-success text-white text-center py-3 mt-5">
+        <p>&copy; 2025 Health & Wellness Planner By Sutrapong | แผนการออกกำลังกายเพื่อสุขภาพ</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
